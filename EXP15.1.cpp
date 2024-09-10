@@ -1,12 +1,11 @@
 #include<iostream>
 using namespace std;
 
-// Function to calculate factorial
 int fact(int n) {
-    if (n <= 1) { // Terminating statement (Base Condition)
+    if (n <= 1) { 
         return 1;
     } else {
-        return (n * fact(n - 1)); // Recursion
+        return (n * fact(n - 1)); 
     }
 }
 
@@ -14,7 +13,7 @@ int main() {
     int X, n;
     cout << "Enter a number: "; 
     cin >> n;      
-    X = fact(n); // Function calling
+    X = fact(n);
     cout << "Factorial = " << X << endl;
     return 0;
 }
