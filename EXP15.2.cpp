@@ -5,7 +5,7 @@ int add(int n) {
     if (n <= 1) { 
         return 1;
     } else {
-        return (n+fact(n - 1)); 
+        return (n+add(n - 1)); 
     }
 }
 
